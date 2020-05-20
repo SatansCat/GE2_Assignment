@@ -8789,7 +8789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lvlChangeScript: {fileID: 385237831}
-  LevelToLoad: 2
+  LevelToLoad: 3
 --- !u!1001 &1753496832
 PrefabInstance:
   m_ObjectHideFlags: 0
