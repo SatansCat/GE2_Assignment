@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene4(Collision).unity
     guid: afcd544d319ffef4a9527810d59642be
+  - enabled: 1
+    path: Assets/Scenes/Scene5(Earth).unity
+    guid: a13ec14a86c42bb419bf4e0ce639b188
   m_configObjects: {}

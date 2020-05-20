@@ -9,11 +9,14 @@ public class Explode : MonoBehaviour
     public GameObject ring;
     public GameObject pointLight;
 
-    
- 
+    public AnimatorCalls lvlChangeScript;
+
+    public int LevelToLoad;
+
+
     private void OnTriggerEnter(Collider other)
     {
-        
+
         if (other.gameObject.tag == "Sentient")
         {
             gameObject.GetComponent<MeshRenderer>().enabled = false;
@@ -21,13 +24,20 @@ public class Explode : MonoBehaviour
             ring.SetActive(true);
             pointLight.SetActive(true);
 
-            foreach(GameObject s in Ships)
+            foreach (GameObject s in Ships)
             {
                 s.GetComponent<Pursue>().enabled = false;
                 s.GetComponent<Seek>().enabled = true;
 
 
             }
+            StartCoroutine("NextScene");
         }
+    }
+
+    IEnumerator NextScene()
+    {
+        yield return new WaitForSeconds(2f);
+        lvlChangeScript.FadeSceneOut(LevelToLoad);
     }
 }
