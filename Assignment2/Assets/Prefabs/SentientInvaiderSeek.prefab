@@ -75,7 +75,7 @@ Light:
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 1
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: d7ce205823b2d2744a54485bf07079c6, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -195,7 +195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8811328566265472252}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 224, y: 89, z: -230}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8811328566257392792}

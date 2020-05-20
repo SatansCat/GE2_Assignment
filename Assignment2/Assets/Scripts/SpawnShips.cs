@@ -8,8 +8,8 @@ public class SpawnShips : MonoBehaviour
     public GameObject ShipContainer;
     public GameObject launchLight;
     public AnimatorCalls lvlChangeScript;
-    
 
+    public int LevelToLoad;
     public int NumShips;
     public List<GameObject> Targets = new List<GameObject>();
 
@@ -38,7 +38,7 @@ public class SpawnShips : MonoBehaviour
             yield return new WaitForSeconds(.1f);
         }
         yield return new WaitForSeconds(3f);
-        lvlChangeScript.FadeSceneOut(1);
+        lvlChangeScript.FadeSceneOut(LevelToLoad);
         yield return new WaitForSeconds(3f);
     }
 }
